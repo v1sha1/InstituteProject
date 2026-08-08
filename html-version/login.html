@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shree Sai Computer Education</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Shree Sai Computer Education</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="active btn-login">Login</a></li>
+                    <li><a href="register.html" class="btn-register">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-left">
+                    <div class="login-branding">
+                        <div class="brand-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h1>Welcome Back!</h1>
+                        <p>Login to access your dashboard, view courses, attendance, and more.</p>
+                        <div class="brand-stats">
+                            <div class="brand-stat">
+                                <div class="stat-number">5000+</div>
+                                <div class="stat-label">Students</div>
+                            </div>
+                            <div class="brand-stat">
+                                <div class="stat-number">95%</div>
+                                <div class="stat-label">Placement</div>
+                            </div>
+                            <div class="brand-stat">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-right">
+                    <div class="login-form-container">
+                        <div class="form-header">
+                            <h1>Student Login</h1>
+                            <p>Enter your credentials to access your account</p>
+                        </div>
+                        
+                        <!-- Login Type Toggle -->
+                        <div class="login-type-toggle">
+                            <button type="button" class="toggle-btn active" data-type="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </button>
+                            <button type="button" class="toggle-btn" data-type="mobile">
+                                <i class="fas fa-phone"></i> Mobile
+                            </button>
+                        </div>
+
+                        <form id="loginForm">
+                            <!-- Email Input -->
+                            <div class="form-group" id="emailGroup">
+                                <label for="email">Email Address</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+
+                            <!-- Mobile Input -->
+                            <div class="form-group" id="mobileGroup" style="display: none;">
+                                <label for="mobile">Mobile Number</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                                    <button type="button" class="toggle-password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Remember & Forgot -->
+                            <div class="form-options">
+                                <label class="remember-me">
+                                    <input type="checkbox" name="remember">
+                                    <span>Remember me</span>
+                                </label>
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-sign-in-alt"></i> Login
+                            </button>
+
+                            <!-- Register Link -->
+                            <div class="form-footer">
+                                <p>New student? <a href="register.html">Register here</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Sai Computer Education</h3>
+                    <p>Bhaiyathan Road Surajpur, Infront of Shyam Bhandar</p>
+                    <p>Chhattisgarh - 497229</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 8823885578</p>
+                    <p><i class="fas fa-envelope"></i> mmci1985@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shree Sai Computer Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
