@@ -40,3 +40,6 @@ client/public/uploads/
 
 # OS
 Thumbs.db
+
+# Local MongoDB data
+.mongodb_data/
